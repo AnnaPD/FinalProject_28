@@ -5,18 +5,18 @@ import string
 
 
 
-valid_email_auth = 'denis_anna_p@mail.ru'
-valid_password_auth = '123Abc00'
-valid_phone_auth = '89276880946'
-valid_personal_account_auth = '363020399140'
+valid_email_auth = 'Email@mail.ru'
+valid_password_auth = '123Abc12'
+valid_phone_auth = '89276880123'
+valid_personal_account_auth = '363020399123'
 valid_firstname = 'Семён'
 valid_lastname = 'Шлепаков'
 valid_email_reg = 'AnnaDePe+2@yandex.ru'
-valid_phone_reg = '+78462269774'
+valid_phone_reg = '+78462269123'
 valid_password_reg = '123Abc001'
 valid_password_reg_repeat = '123Abc001'
-invalid_email_reg = 'denis_anna_p@mail.ru'
-invalid_phone_reg = '89276880946'
+invalid_email_reg = 'Email@mail.ru'
+invalid_phone_reg = '89276880123'
 invalid_pass_repeat = '123Abc03'
 
 
