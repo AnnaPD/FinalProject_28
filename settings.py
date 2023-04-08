@@ -98,3 +98,4 @@ def generation_specific_string_сhinese_char(length):
     print(result)
     return result
 generation_specific_string_сhinese_char(12)
+
