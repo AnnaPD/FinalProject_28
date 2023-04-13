@@ -1,15 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import urlparse
-
 from termcolor import colored
-
-
-# class BasePage:
-#     def __init__(self, driver):
-#         self driver = driver
-#         self.base_url = "https://b2c.passport.rt.ru/"
-
 
 
 class BasePage(object):
@@ -21,13 +13,6 @@ class BasePage(object):
     def get_relative_link(self):
         url = urlparse(self.driver.current_url)
         return url.path
-
-
-    # #получить атрибут элемента
-    # def get_attribute(self, by_locator, attribute):
-    #     WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located(by_locator), attribute)
-    #     return bool(attribute)
-
 
     #найти элемент и кликнуть по нему
     def find_click(self, by_locator):
@@ -57,18 +42,13 @@ class BasePage(object):
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
         return element
 
-
-
     def find(self, timeout=10):
         """ Find element on the page. """
-
         element = None
-
         try:
             element = WebDriverWait(self.driver, timeout).until(
                 EC.presence_of_element_located(self.by_locator)
             )
         except:
             print(colored('Element not found on the page!', 'red'))
-
         return element
